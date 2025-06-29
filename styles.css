@@ -1,0 +1,385 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e3f2fd; /* azul muy claro */
+  color: #1a237e; /* azul oscuro */
+  line-height: 1.6;
+  padding: 20px 40px; /* margen para todo el body */
+}
+
+header {
+  background: #283593; /* azul oscuro */
+  color: white;
+  padding: 10px 0;
+}
+
+.titulo-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrado horizontal */
+  padding: 15px;
+  background: #3949ab; /* azul medio */
+  border-radius: 8px;
+}
+
+.titulo-principal h1 {
+  margin-left: 15px;
+  font-size: 2rem;
+}
+
+.login img {
+  height: 75px;
+  width: auto;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* ---------- MENÚ ---------- */
+nav {
+  background-color: #3949ab; /* azul medio */
+  border-radius: 0 0 8px 8px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* menu horizontal centrado */
+  padding: 10px 0;
+  position: relative;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle-label {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px; /* arriba derecha */
+  z-index: 1001;
+}
+
+.menu-items {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.menu-items a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.menu-items a:hover {
+  background-color: #1a237e; /* azul oscuro */
+  color: #bbdefb; /* azul claro */
+}
+
+/* ---------- CARRUSEL ---------- */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-item img {
+  text-align: center;
+  width: 90%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  background: rgba(33, 150, 243, 0.7); /* azul con transparencia */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.carousel-btn:hover {
+  background: rgba(33, 150, 243, 1);
+}
+
+/* ---------- PRODUCTOS ---------- */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.producto {
+  background: #bbdefb; /* azul muy claro */
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(26, 35, 126, 0.3); /* sombra azul oscura */
+  color: #1a237e;
+}
+
+.producto img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ---------- FORMULARIO ---------- */
+.form-container {
+  margin: 2rem auto;
+  background: #e8eaf6; /* azul clarito */
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 450px;
+  box-shadow: 0 0 15px rgba(33, 150, 243, 0.4);
+  color: #1a237e;
+  text-align: center;
+}
+
+.form-container label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+  text-align: left;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"] {
+  padding: 10px;
+  width: 100%;
+  border: 2px solid #3949ab;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus {
+  outline: none;
+  border-color: #1a237e;
+  background-color: #bbdefb;
+}
+
+.form-container input[type="submit"] {
+  background-color: #283593;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #1a237e;
+}
+
+/* ---------- TABLA ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #e3f2fd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(26, 35, 126, 0.2);
+}
+
+th, td {
+  padding: 1rem;
+  border: 1px solid #bbdefb;
+  text-align: left;
+  color: #1a237e;
+}
+
+th {
+  background-color: #3949ab;
+  color: white;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #283593;
+  color: #bbdefb;
+  padding: 2rem 1rem;
+  border-radius: 12px 12px 0 0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section h3 {
+  color: #bbdefb;
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #bbdefb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #3949ab;
+  padding-top: 1rem;
+}
+
+.subir {
+  display: inline-block;
+  margin-top: 1rem;
+  color: white;
+  background: #3949ab;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.subir:hover {
+  background: #1a237e;
+}
+
+/* ---------- SOCIAL ICONS ---------- */
+footer .social {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+footer .social a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+footer .social a img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.2s ease-in-out;
+}
+
+footer .social a img:hover {
+  transform: scale(1.6);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  body {
+    padding: 15px 20px;
+  }
+
+   .menu-toggle-label {
+    display: block;         /* Mostrar el botón hamburguesa */
+    position: absolute;     /* Posicionamiento absoluto */
+    top: -160px;             /* Separado 10px del tope */
+    right: 10px;           /* Separado 10px de la derecha */
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;          /* Para que esté sobre otros elementos */
+  }
+
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: -100px;
+    right: 1px;
+    background-color: #3949ab;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 220px;
+    z-index: 1000;
+  }
+
+  .menu-toggle:checked + .menu-toggle-label + .menu-items {
+    display: flex;
+  }
+
+  .menu-toggle-label {
+    display: block;
+  }
+
+  .menu {
+    justify-content: flex-end; /* pone el botón de hamburguesa en la derecha */
+  }
+
+  .titulo-principal {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .titulo-principal h1 {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  /* Centrar formulario en pantallas pequeñas */
+  .form-container {
+    margin: 2rem auto;
+    width: 90%;
+  }
+
+  /* Centrar iframe de ubicación */
+  iframe {
+    display: block;
+    margin: 1rem auto;
+    width: 90%;
+    height: 250px;
+  }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Composta Orgánica</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="titulo-principal">
+      <div class="login">
+        <img src="logo.jpg" alt="Logo UBBJ" />
+      </div>
+      <h1>COMPOSTA ORGÁNICA</h1>
+    </div>
+    <!-- Menú -->
+    <nav>
+      <div class="menu">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-toggle-label">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="menu-items">
+          <li><a href="#Inicio">Inicio</a></li>
+          <li><a href="#Beneficios">Beneficios</a></li>
+          <li><a href="#Productos">Productos</a></li>
+          <li><a href="#Contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sección de Inicio con carrusel -->
+  <section id="Inicio">
+    <p>La composta orgánica es un abono natural obtenido a partir de la descomposición de residuos orgánicos como restos de comida, hojas secas y cáscaras de frutas.</p>
+    <div class="carousel">
+      <button class="carousel-btn prev">&#10094;</button>
+      <div class="carousel-inner">
+        <div class="carousel-item"><img src="1.jpg" alt="Imagen 1" /></div>
+        <div class="carousel-item"><img src="2.jpg" alt="Imagen 2" /></div>
+        <div class="carousel-item"><img src="3.jpg" alt="Imagen 3" /></div>
+        <div class="carousel-item"><img src="4.jpg" alt="Imagen 4" /></div>
+        <div class="carousel-item"><img src="5.jpg" alt="Imagen 5" /></div>
+        <div class="carousel-item"><img src="6.jpg" alt="Imagen 6" /></div>
+      </div>
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section id="Beneficios">
+    <h2>Beneficios</h2>
+    <table>
+      <tr><th>Beneficio</th><th>Descripción</th><th>Foto</th></tr>
+      <tr><td>Calidad del suelo</td><td>Mejora la estructura del suelo</td><td><img src="suelo.jpg" alt="Suelo" width="80"></td></tr>
+      <tr><td>Ambiente</td><td>Reduce la cantidad de basura doméstica</td><td><img src="ambient.jpg" alt="Ambiente" width="80"></td></tr>
+      <tr><td>Aire</td><td>Reduce el uso de fertilizantes químicos</td><td><img src="aire.jpg" alt="Aire" width="80"></td></tr>
+    </table>
+  </section>
+
+  <!-- Productos -->
+  <section id="Productos">
+    <h2>Productos</h2>
+    <main class="productos">
+      <div class="producto"><img src="compostanatural.jpg" alt="Producto"><h3>Composta Natural</h3><p>$125</p></div>
+      <div class="producto"><img src="fertilizante.jpg" alt="Producto"><h3>Fertilizante Orgánico</h3><p>$99</p></div>
+      <div class="producto"><img src="sueloen.jpg" alt="Producto"><h3>Suelo Enriquecido</h3><p>$150</p></div>
+      <div class="producto"><img src="kit.jpg" alt="Producto"><h3>Kit de Composta</h3><p>$200</p></div>
+      <div class="producto"><img src="abonocas.jpg" alt="Producto"><h3>Abono Casero</h3><p>$85</p></div>
+      <div class="producto"><img src="ecopa.jpg" alt="Producto"><h3>Eco Pack</h3><p>$120</p></div>
+    </main>
+  </section>
+
+  <!-- Contacto -->
+  <section id="Contacto">
+    <h2>Contacto</h2>
+    <p>Dirección: CECyTEM Plantel Donato Guerra, EdoMex</p>
+    <p><a href="mailto:compostaBioCompost25@gmail.com">Email: compostaBioCompost25@gmail.com</a></p>
+        <p><a href="tel:+527294691310">Teléfono: +52 729-469-1310</a></p>
+<br>
+<br>
+    <div class="form-container">
+      <form action="registrar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <input type="submit" value="Registrar">
+      </form>
+    </div>
+    <h2>Ubicación</h2>
+    <iframe src="https://maps.google.com/maps"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Deysi Jordan</h3>
+        <p>Proyectos Escolares para Cecytem Plantel Donato Guerra</p>
+      </div>
+      <div class="footer-section">
+        <h3>Enlaces Útiles</h3>
+        <ul>
+          <li><a href="#Inicio">Inicio</a></li>
+          <li><a href="#Beneficios">Beneficios</a></li>
+          <li><a href="#Productos">Productos</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p><a href="mailto:biocompost2025@gmail.com">Enviar correo electrónico</a></p>
+        <p><a href="tel:+527228031073">Llamar</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social">
+          <a href="https://www.facebook.com/share/19GAr8go6u/" target="_blank">
+            <img src="face.png" alt="Facebook" class="social-icon" width="25" height="25">
+          </a>
+          <a href="https://wa.me/+527228031073" target="_blank">
+            <img src="social.png" alt="WhatsApp" class="social-icon" width="25" height="25">
+          </a>
+          <a href="https://www.instagram.com/jordan_deyyy?igsh=czZrbzN2enF1b3I3" target="_blank">
+            <img src="instagram.png" alt="Instagram" class="social-icon" width="25" height="25">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Todos los derechos reservados 2025</p>
+      <a href="#" class="subir">&uarr; Subir</a>
+    </div>
+  </footer>
+
+  <script>
+    // Botón "Subir"
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelector('.subir').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
